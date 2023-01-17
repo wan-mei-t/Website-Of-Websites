@@ -1,0 +1,207 @@
+/* CSS for general structure */
+body {
+	text-align: center;
+	display: grid;
+	grid-template: auto auto auto auto auto/ 1fr;
+	font-family: 'trebuchet ms';
+	margin: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: #e7bc91;
+	color: white;
+}
+
+/* CSS for the main section */
+main {
+	grid-column: 1/2;
+	grid-row: 4/5;
+	padding: 15px;
+}
+
+h3 {
+	text-align: left;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #ddb892;
+	font-size: 25pt;
+	
+}
+
+/* CSS for the picture layout (flex) */
+.picture-layout {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/* CSS for figures */
+main figure {
+	height: auto;
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+	width: 400px;
+}
+
+a {
+	text-decoration: none;
+}
+
+figure a:link {
+	color: black;
+}
+
+figure a:visited {
+	color: black;
+}
+
+figure a:hover {
+	color: black;
+}
+
+figure a:active {
+	color: black;
+}
+
+main figure figcaption div a:link {
+	color: #e7bc91;
+}
+
+main figure figcaption div a:visited {
+	color: #e7bc91;
+}
+
+main figure figcaption div a:hover {
+	color: white;
+}
+
+main figure figcaption div a:active {
+	color: #e7bc91;
+}
+
+main figure:hover {
+	border: 1px solid #e7bc91;
+}
+
+main figure img {	
+	width: 100%;
+}
+
+main figure figcaption {
+	color: #e7bc91;
+	margin-top: 15px;
+}
+
+main figure h4 {
+	color: #6f4518;
+	font-size: 16pt;
+	margin: 5px 5px 10px;
+}
+
+main figure hr {
+	background-color: #e7bc91;
+	border: none;
+	height: 1px;
+}
+
+main figure div p, main figure div a {
+	width: auto;
+	margin: 0;
+	padding: 5px;
+}
+
+main figure div {
+	display: inline-block;
+	border: 1px solid #e7bc91;
+	width: auto;
+	margin-bottom: 10px;
+}
+
+main figure div:hover, figure div p:hover, figure div a:hover {
+	background-color: #6f4518;
+	color: white;
+}
+
+/* CSS for header and nav which will stay even when scrolling */
+header {
+	margin: 0;
+	grid-row: 1/2;
+}
+
+nav ul li {
+	display: inline;
+	list-style-type: none;
+	margin: 0px 10px;
+	font-size: 10pt;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav {
+	border-bottom: 1px solid #d4a276;
+	padding: 1px;
+	background-color: #e7bc91;
+	grid-row: 2/3;
+	position: sticky;
+	top: 0px;
+}
+
+/* CSS for welcome section with welcoming picture */
+#homepage-welcome {
+	grid-column: 1/2;
+	grid-row: 3/4;
+	display: flex;
+	align-items: center;
+}
+
+#homepage-welcome figure {
+	flex: 1;
+	text-align: right;
+}
+
+#homepage-welcome figure img {
+	height: 550px;
+}
+
+#homepage-welcome a {
+	color: #d4a276;
+}
+
+#homepage-welcome section h2 {
+	font-size: 40pt;
+	margin: 20px 0px;
+}
+
+#homepage-welcome section {
+	flex: 1;
+	text-align: left;
+}
+
+/* CSS for footer */
+footer {
+	grid-column: 1/2;
+	grid-row: 5/6;
+	border-top: 1px solid #d4a276;
+	background-color: #e7bc91;
+}
+
+footer ul li {
+	list-style-type: none;
+	text-align: right;
+	margin: 2px 5px;
+	
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: white;
+}
+
